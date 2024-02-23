@@ -36,7 +36,11 @@ for index, row in filtered_df.iterrows():
         word_freq[word] = word_freq.get(word, 0) + prob
 
 # Create the word cloud
-wordcloud = WordCloud(width=600, height=400, background_color='white', colormap='Dark2_r').generate_from_frequencies(word_freq)
+custom_cmap = matplotlib.colors.LinearSegmentedColormap.from_list(
+    "", ["#000000", "#000080", "#006400", "#800000"]
+)
+
+wordcloud = WordCloud(width=800, height=500, background_color='white', colormap=custom_cmap).generate_from_frequencies(word_freq)
 
 # Plot the word cloud
 plt.figure(figsize=(10, 5))
