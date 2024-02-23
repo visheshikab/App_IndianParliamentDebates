@@ -36,7 +36,7 @@ for index, row in filtered_df.iterrows():
         word_freq[word] = word_freq.get(word, 0) + prob
 
 # Create the word cloud
-wordcloud = WordCloud(width=400, height=300, background_color='white', colormap='gist_earth_r').generate_from_frequencies(word_freq)
+wordcloud = WordCloud(width=400, height=300, background_color='white', colormap='Dark2_r').generate_from_frequencies(word_freq)
 
 # Plot the word cloud
 plt.figure(figsize=(10, 5))
