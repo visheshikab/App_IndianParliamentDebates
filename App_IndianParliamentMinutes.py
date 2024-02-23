@@ -12,7 +12,7 @@ df = pd.read_csv('10final_abridged3.csv')
 
 
 # Set larger font size for main title
-st.markdown("<h1 style='font-family:Raleway; font-size: 2.8rem;'>Indian Parliament Debate since 1952</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='font-family:Raleway; font-size: 2.8rem;'>Indian Parliament Debates since 1952</h1>", unsafe_allow_html=True)
 
 # Set smaller font size for the note with italicized text
 st.markdown("<p style='font-family:Roboto; font-size: 1.1rem; margin-top: 0.5rem;'><i>(I had known that the Lok Sabha website publishes the minutes of the parliamentary debates, but found the idea of rummaging through the 5,000 documents difficult. Here is my small attempt to take this massive truckload of information and make it more accessible. I hope it sparks your curiosity and encourages further exploration of this rich resource. Let me know if you have any suggestions to improve on visheshika.baheti@gmail.com.)</i></p>", unsafe_allow_html=True)
@@ -36,7 +36,7 @@ for index, row in filtered_df.iterrows():
         word_freq[word] = word_freq.get(word, 0) + prob
 
 # Create the word cloud
-wordcloud = WordCloud(width=400, height=300, background_color='white', colormap='gist_earth').generate_from_frequencies(word_freq)
+wordcloud = WordCloud(width=400, height=300, background_color='white', colormap='gist_gray').generate_from_frequencies(word_freq)
 
 # Plot the word cloud
 plt.figure(figsize=(10, 5))
