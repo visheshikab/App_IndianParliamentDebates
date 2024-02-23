@@ -75,7 +75,7 @@ if selected_word:
         # Set remaining plot properties and display the plot
         ax.set_xlabel('Year', fontname='Raleway')
         ax.set_ylabel('Sum of Probabilities', fontname='Raleway')
-        ax.set_title(f'Frequency of "{selected_word}" over years')
+        ax.set_title(f'Topic of "{selected_word}" over years')
         st.pyplot(fig)
     else:
         st.write(f'"{selected_word}" not found in the dataset for any year.')
