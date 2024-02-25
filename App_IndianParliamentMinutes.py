@@ -17,7 +17,7 @@ df = pd.read_csv('14final_abridged3.csv')
 # Set larger font size for main title
 st.markdown("<h1 style='font-family:Raleway; font-size: 2.8rem;'>Indian Parliament Debates since 1952</h1>", unsafe_allow_html=True)
 
-st.markdown("<p style='font-family:Roboto; font-size: 1.1rem; margin-top: 0.5rem;'><i>(I had known that the Lok Sabha website publishes the minutes of the parliamentary debates, but found the idea of rummaging through the 5,000 documents difficult. Here is my small attempt to take this massive truckload of information and make it more accessible. I hope it sparks your curiosity and encourages further exploration of this rich resource. Let me know if you have any suggestions to improve on <a href='https://www.linkedin.com/in/visheshika-baheti-76066a10a' target='_blank'>Visheshika Baheti on LinkedIn</a> or visheshika.baheti@gmail.com.)</i></p>", unsafe_allow_html=True)
+st.markdown("<p style='font-family:Roboto; font-size: 1.1rem; margin-top: 0.5rem;'><i>(I had known that the Lok Sabha website publishes the minutes of the parliamentary debates, but found the idea of rummaging through the 5,000 documents difficult. Here is my small attempt to take this massive truckload of information and make it more accessible. I hope it sparks your curiosity and encourages further exploration of this rich resource. Let me know if you have any suggestions to improve, please connect on <a href='https://www.linkedin.com/in/visheshika-baheti-76066a10a' target='_blank'>LinkedIn</a> or visheshika.baheti@gmail.com.)</i></p>", unsafe_allow_html=True)
 
 
 # Set smaller font size for subtitle
