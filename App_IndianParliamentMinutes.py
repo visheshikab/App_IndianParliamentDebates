@@ -19,7 +19,7 @@ df = pd.read_csv('14final_abridged3.csv')
 st.markdown("<h1 style='font-family:Raleway; font-size: 2.8rem;'>Indian Parliament Debates since 1952</h1>", unsafe_allow_html=True)
 
 # Load the icon image
-linkedin_icon = Image.open("LI-Bug.svg.original.svg")  # Replace with the actual path
+linkedin_icon = Image.open("LI-Bug.svg.original.png")  # Replace with the actual path
 
 # Create a link with the icon
 linkedin_link = st.markdown(f"[![LinkedIn](LI-Bug.svg.original](https://www.linkedin.com/in/visheshika-baheti-76066a10a)", unsafe_allow_html=True)  # Replace with your username
