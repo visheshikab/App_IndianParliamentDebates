@@ -10,7 +10,7 @@ from wordcloud import WordCloud
 st.set_page_config(layout="centered", page_title="Indian Parliament Debates since 1952", page_icon="")
 
 # Load the CSV file
-df = pd.read_csv('11final_abridged3.csv')
+df = pd.read_csv('14final_abridged3.csv')
 
 
 # Set larger font size for main title
