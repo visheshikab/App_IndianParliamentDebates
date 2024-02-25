@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib
-import pillow
-#from Pillow import Image
+from PIL import Image
+
 
 import ast
 from wordcloud import WordCloud
