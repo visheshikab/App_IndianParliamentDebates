@@ -12,7 +12,7 @@ from wordcloud import WordCloud
 st.set_page_config(layout="centered", page_title="Indian Parliament Debates since 1952", page_icon="")
 
 # Load the CSV file
-df = pd.read_csv(r'15final_abridged3.csv')
+df = pd.read_csv(r'16final_abridged3.csv')
 
 # Set larger font size for main title
 st.markdown("<h1 style='font-family:Raleway; font-size: 2.8rem;'>Indian Parliament Debates since 1952</h1>", unsafe_allow_html=True)
