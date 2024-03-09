@@ -58,7 +58,7 @@ all_words = set(word for row in df['topic_0_words'] for word, _ in row)
 st.markdown("<h2 style='font-family:Raleway; font-size: 1.7rem;'>Word Frequency Graph</h2>", unsafe_allow_html=True)
 
 # Pre-select "covid" in the text input field
-selected_word = st.text_input('Type a word:', 'kashmir')  # Pre-populate with "covid"
+selected_word = st.text_input('Type a word:', 'kashmir').lower()  # Pre-populate with "covid"
 
 if selected_word:
     # Process the DataFrame to filter based on the typed word
